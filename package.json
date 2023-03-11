@@ -1,0 +1,20 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite ./client",
+    "build": "vite build ./client",
+    "preview": "vite preview ./client",
+    "server": "nodemon server/server.js",
+    "start": "concurrently \"npm run server\" \"npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "eslint": "^8.36.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
+    "vite": "^4.1.4"
+  }
+}
