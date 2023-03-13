@@ -7,4 +7,10 @@ export default defineConfig({
       '/api': 'http://localhost:5000/',
     },
   },
+  preview: {
+    port: 3000,
+    proxy: {
+      '/api': 'http://localhost:5000/',
+    },
+  },
 });
